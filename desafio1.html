@@ -43,11 +43,24 @@
         border: 2px double #BB99DD;
         border-radius: 150px;
         margin: 20px;
+        transition-property: width, height;
+        transition-duration: 2s;
+    }
+
+    #eu:hover{
+        width: 250px;
+        height: 250px;
     }
 
     a{
         text-decoration: none;
-        color: #BB99DD
+        color: #BB99DD;
+        transition-property: font-size;
+        transition-duration: 2s;
+    }
+
+    a:hover{
+        font-size: 20px;
     }
 
     .links{
@@ -61,11 +74,20 @@
     .links a{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border: 3px solid #BB99DD;
         border-radius: 5px;
         margin: 5px;
         padding: 10px 70px;
         font-weight: 600;
+        text-align: center;
+        transition-property: font-size;
+        transition-duration: 2s;
+    }
+
+    .links a:hover{
+        font-size: 20px;
     }
 
     .icones{
@@ -76,6 +98,13 @@
         width: 30px;
         height: 30px;
         margin: 0 10px;
+        transition-property: width, height;
+        transition-duration: 2s;
+    }
+
+    .icones img:hover{
+        width: 40px;
+        height: 40px;
     }
 </style>
 
@@ -91,9 +120,9 @@
     <nav class="links">
 
         <a href="" target="_blank">Veja meu portfólio interativo!</a>
-        <a href="" target="_blank">Fale comigo pelo Whatsapp!</a>
-        <a href="" target="_blank">Link 3</a>
-        <a href="" target="_blank">Link 4</a>
+        <a href="https://api.whatsapp.com/send?phone=5561996386998&text=Ol%C3%A1%2C%20Jo%C3%A3o!%20Estou%20interessado%20em%20seu%20trabalho%20com%20front-end." target="_blank">Fale comigo pelo Whatsapp!</a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-marcelo-dantas-3b519b18a/" target="_blank">Confira meu LinkedIn!</a>
+        <a href="https://github.com/jmgrd98" target="_blank">Confira meu GitHub!</a>
     </nav>
 
     <nav class="icones">
